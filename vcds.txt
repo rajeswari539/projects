@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+    char s[100];int i,v,c,d,spe;
+    printf("Enter the String:  ");
+    gets(s);
+    for(i=v=c=d=spe=0;s[i]!='\0';i++){
+        if(s[i]>=65 &&s[i]<=90 || s[i]>=97 && s[i]<=122){
+    if(s[i]=='a' || s[i]=='e' || s[i]=='i'|| s[i]=='o' || s[i]=='u' || s[i]=='A' || s[i]=='E' || s[i]=='I' || s[i]=='O' || s[i]=='U'){
+        v++;}
+        else {c++;}}
+    
+    else 
+    else if(s[i]>='0' && s[i]<='9')d++;
+    else spe++;
+    }
+    printf(" v=%d,c=%d,d=%d,spe=%d",v,c,d,spe);
+    return 0;
+}
